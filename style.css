@@ -127,13 +127,15 @@ header > nav {
     width: 320px;
 }
 
+
+
 .div1 img {
     width: 350px;
     border-radius: 60px;
 }
 
 .div2 img {
-    width: 450px;
+    width: 420px;
     border-radius: 60px;
     
 }
@@ -170,6 +172,104 @@ header > nav {
     padding: 40px; 
     
 }
+ 
+@media only screen and (max-width: 1120px){  
+
+    .div1 img,
+    .div2 img,
+    .div3 img {
+        width: 100%; /* As imagens ocupam a largura total do dispositivo */
+        max-width: 250px; /* Define um limite máximo para o tamanho das imagens */
+    }  
+
+    .div3 img {
+        display: none;
+    }
+  
+
+    .div3 .painel p {
+        font-size: 20px; /* Ajusta o tamanho da fonte para dispositivos menores */
+        padding: 20px; /* Ajusta o espaçamento do texto */
+        
+    }
+}
+
+
+@media only screen and (max-width: 900px) {
+    header {
+        padding: 10px; /* Ajuste o espaçamento do cabeçalho para dispositivos menores */
+    }
+
+    header > nav {
+        flex-direction: column; /* Altera para coluna em dispositivos menores */
+        align-items: center; /* Centraliza os itens verticalmente */
+    }
+
+    .menu {
+        margin-top: 10px; /* Espaçamento entre os links do menu */
+    }
+
+    .section1 h1 {
+        font-size: 30px; /* Ajusta o tamanho da fonte para dispositivos menores */
+    }
+
+    .animacao {
+        margin-top: 10px; /* Ajusta o espaçamento da animação para dispositivos menores */
+    }
+
+    .section2 {
+        flex-direction: column; /* Altera para coluna em dispositivos menores */
+        align-items: center; /* Centraliza os elementos verticalmente */
+        gap: 20px; /* Espaçamento entre as seções */
+    }
+
+    .div1,
+    .div2,
+    .div3 {
+        margin: 0; /* Remove as margens laterais para dispositivos menores */
+    }
+
+    .div1 img,
+    .div2 img,
+    .div3 img {
+        width: 100%; /* As imagens ocupam a largura total do dispositivo */
+        max-width: 350px; /* Define um limite máximo para o tamanho das imagens */
+    }
+
+    .div3{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .div3 .painel {
+        width: 60%; /* Ajusta a largura do painel de texto */
+        
+    }
+
+    .div3 img {
+        display: none;
+    }
+
+    .div3 .painel p {
+        font-size: 30px; /* Ajusta o tamanho da fonte para dispositivos menores */
+        padding: 20px; /* Ajusta o espaçamento do texto */
+        
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+    
+    .div3 .painel p {
+        font-size: 20px; /* Ajusta o tamanho da fonte para dispositivos menores */
+        padding: 20px; /* Ajusta o espaçamento do texto */
+        
+    }
+}
+
+
+
 
 
 
